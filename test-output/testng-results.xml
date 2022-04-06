@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-03-11T17:34:52 IST" name="Default suite" finished-at="2022-03-11T17:34:52 IST" duration-ms="133">
+    <groups>
+    </groups>
+    <test started-at="2022-03-11T17:34:52 IST" name="Default test" finished-at="2022-03-11T17:34:52 IST" duration-ms="133">
+      <class name="testAcademy.TestNGDependsOn">
+        <test-method signature="openWebsite()[pri:0, instance:testAcademy.TestNGDependsOn@12b0404f]" started-at="2022-03-11T17:34:52 IST" name="openWebsite" finished-at="2022-03-11T17:34:52 IST" duration-ms="21" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openWebsite -->
+        <test-method signature="loginWebsite()[pri:0, instance:testAcademy.TestNGDependsOn@12b0404f]" started-at="2022-03-11T17:34:52 IST" name="loginWebsite" finished-at="2022-03-11T17:34:52 IST" depends-on-methods="testAcademy.TestNGDependsOn.openWebsite" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWebsite -->
+        <test-method signature="goToBasket()[pri:0, instance:testAcademy.TestNGDependsOn@12b0404f]" started-at="2022-03-11T17:34:52 IST" name="goToBasket" finished-at="2022-03-11T17:34:52 IST" depends-on-methods="testAcademy.TestNGDependsOn.loginWebsite" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToBasket -->
+        <test-method signature="logOutFromWebsite()[pri:0, instance:testAcademy.TestNGDependsOn@12b0404f]" started-at="2022-03-11T17:34:52 IST" name="logOutFromWebsite" finished-at="2022-03-11T17:34:52 IST" depends-on-methods="testAcademy.TestNGDependsOn.goToBasket" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOutFromWebsite -->
+      </class> <!-- testAcademy.TestNGDependsOn -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
